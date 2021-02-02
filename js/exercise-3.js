@@ -1,22 +1,20 @@
 function urlEncode(url) {
     return encodeURIComponent(url);
 }
-
 function urlDecode(url) {
     return decodeURIComponent(url);
 }
-
-let encodebtn = document.querySelector('#encode');
-encodebtn.addEventListener('click',function(event){
-    let inputtext = document.querySelector('#inputbox');
-    let encodetext = urlEncode(inputtext.value);
-    let outputtext = document.querySelector('#outputbox');
+const encodebtn = document.querySelector('#encode');
+encodebtn.addEventListener('click', () => {
+    const inputtext = document.querySelector('#inputbox');
+    const encodetext = urlEncode(inputtext.value);
+    const outputtext = document.querySelector('#outputbox');
     outputtext.value = encodetext;
 });
-let decodebtn = document.querySelector('#decode');
-decodebtn.addEventListener('click',function(event){
-    let inputtext = document.querySelector('#inputbox');
-    let decodetext = urlDecode(inputtext.value);
-    let outputtext = document.querySelector('#outputbox');
+const decodebtn = document.querySelector('#decode');
+decodebtn.addEventListener('click', () => {
+    const inputtext = document.querySelector('#inputbox');
+    const decodetext = urlDecode(inputtext.value);
+    const outputtext = document.querySelector('#outputbox');
     outputtext.value = decodetext;
 });

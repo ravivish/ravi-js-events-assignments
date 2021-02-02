@@ -1,18 +1,18 @@
-document.querySelector('#Counter').value=0;
-let plusbtn = document.querySelector('#plusCounter');
-plusbtn.addEventListener('click',function(event){
+function increaseCounter() {
+    const element = document.querySelector('#Counter');
+    element.value += 1;
+}
+
+function decreaseCounter() {
+    const element = document.querySelector('#Counter');
+    element.value -= 1;
+}
+document.querySelector('#Counter').value = 0;
+const plusbtn = document.querySelector('#plusCounter');
+plusbtn.addEventListener('click', () => {
     increaseCounter();
 });
-let minusbtn = document.querySelector('#minusCounter');
-minusbtn.addEventListener('click',function(event){
+const minusbtn = document.querySelector('#minusCounter');
+minusbtn.addEventListener('click', () => {
     decreaseCounter();
 });
-
-function increaseCounter(){
-    let element = document.querySelector('#Counter');
-    element.value++;
-}
-function decreaseCounter(){
-    let element = document.querySelector('#Counter');
-    element.value--;
-}

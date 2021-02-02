@@ -1,5 +1,5 @@
-let element = document.querySelector('#hexvalue');
-element.addEventListener('input', function (event) {
-    let box = document.querySelector('.box');
+const element = document.querySelector('#hexvalue');
+element.addEventListener('input', () => {
+    const box = document.querySelector('#box');
     box.style.backgroundColor = element.value;
 });
