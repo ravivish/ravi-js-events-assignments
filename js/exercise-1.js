@@ -3,4 +3,4 @@ window.addEventListener('click', () => {
     let element = document.querySelector('#btncounter');
     // element.value++
     element.value++;
-})
+});
