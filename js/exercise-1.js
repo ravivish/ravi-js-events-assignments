@@ -1,6 +1,7 @@
 document.querySelector('#btncounter').value = 0;
+const element = document.querySelector('#btncounter');
 window.addEventListener('click', () => {
-    let element = document.querySelector('#btncounter');
-    // element.value++
-    element.value++;
+    let a = parseInt(element.value, 10);
+    a += 1;
+    element.value = a;
 });

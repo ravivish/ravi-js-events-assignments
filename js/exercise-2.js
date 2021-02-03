@@ -1,18 +1,22 @@
 function increaseCounter() {
-    const element = document.querySelector('#Counter');
-    element.value += 1;
+    const element = document.querySelector('#counter');
+    let num = parseInt(element.value, 10);
+    num += 1;
+    element.value = num;
 }
 
 function decreaseCounter() {
-    const element = document.querySelector('#Counter');
-    element.value -= 1;
+    const element = document.querySelector('#counter');
+    let num = parseInt(element.value, 10);
+    num += 1;
+    element.value = num;
 }
-document.querySelector('#Counter').value = 0;
-const plusbtn = document.querySelector('#plusCounter');
+document.querySelector('#counter').value = 0;
+const plusbtn = document.querySelector('#plus-counter');
 plusbtn.addEventListener('click', () => {
     increaseCounter();
 });
-const minusbtn = document.querySelector('#minusCounter');
+const minusbtn = document.querySelector('#minus-counter');
 minusbtn.addEventListener('click', () => {
     decreaseCounter();
 });
